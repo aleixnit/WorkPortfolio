@@ -740,14 +740,6 @@ color: #FE53BB;
 	color: darkorchid;
 }
 
-.footer {
-	background-color: #00ff08;
-	padding: 20px;
-	text-align: center;
-	color: #000;
-}
-
-
 /* -------------------------------- EDUCATION ------------------------------- */
 
 .education_container {
@@ -1024,10 +1016,16 @@ color: #FE53BB;
 	width: 200px;
   }
   
-  .buttons {
-	position:sticky;
-	left: 50%;
-	transform: translateX(-50%);
-	bottom: 10px;
-  }
-  
+  /* --------------------------------- FOOTER --------------------------------- */
+  .footer {
+	background-color: #00ff08;
+	padding: 3rem;
+	text-align: center;
+	color: #000;
+	font-weight: 400;
+	font-size: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
