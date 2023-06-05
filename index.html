@@ -33,6 +33,7 @@
             style="
               text-decoration: none;
               background-color: rgb(15, 15, 15);
+              border-radius: 20px;
               padding: 10px;
             "
             ><span>aleix</span>aguilar</a
@@ -148,18 +149,18 @@
 
     <section class="footer1 hey-section">
       <div class="footer2">
-        <h2 class="hover-target" id="about_me">
+        <h2 class="hover-target " id="about_me">
           ABOUT <span style="color: rgb(255, 255, 255)">ME😊</span>
         </h2>
-        <p id="element2" style="margin-bottom: 40px; font-size: 20px">
-          <!-- <span style="font-weight: 600">Programador web junior</span> con gran
+        <p style="margin-bottom: 40px; font-size: 20px; line-height: 45px;">
+          <span style="font-weight: 600">Programador web junior</span> con gran
           pasión por la <span style="font-weight: 600">tecnología y el diseño.</span> Me he ido formando
           en <span style="font-weight: 600">diversos bootcamps de front-end</span>, dónde he ido
           adquiriendo<span style="font-weight: 600"> multitud de competencias técnicas.</span> <br> En cuanto
           a la personalidad, me considero una persona con
           <span style="font-weight: 600"> grandes facilidades comunicativas </span>,
           <span style="font-weight: 600">autodidacta</span> y<span style="font-weight: 600"> muy motivado</span> por encontrar
-          trabajo en este sector. -->
+          trabajo en este sector.
 
           <!-- Mi objetivo personal, es utilizar mis habilidades como
           programador web para desarrollar soluciones innovadoras que aborden
@@ -174,13 +175,13 @@
             <h2 class="hover-target" style="color: rgb(255, 255, 255); text-align: left; width: fit-content; border-radius: 30px; margin-bottom: 10px;">✏️EDUCATION</h2>
             
             <div class="education_container">
-              <div><img class="hey-section" src="./ironhack.jpg" alt="ironhack"> <p style="font-weight: 800;">BOOTCAMP FRONT-END</p> </div>
-              <div><img class="hey-section" src="./pimec_logotip.jpg" alt="pimec"> <p style="font-weight: 800;">BOOTCAMP FRONT-END</p> </div>
-              <div><img class="hey-section" src="./logo-uoc-default.png" alt="uoc"> <p style="font-weight: 800;">GRADO MULTIMEDIA</p> </div>
+              <div><img class="hey-section" src="./ironhack.jpg" alt="ironhack"> <p class="hey-section" style="font-weight: 800;">BOOTCAMP FRONT-END</p> </div>
+              <div><img class="hey-section" src="./pimec_logotip.jpg" alt="pimec"> <p class="hey-section" style="font-weight: 800;">BOOTCAMP FRONT-END</p> </div>
+              <div><img class="hey-section" src="./logo-uoc-default.png" alt="uoc"> <p class="hey-section" style="font-weight: 800;">GRADO MULTIMEDIA</p> </div>
             </div>   
           </div>
         </div>
-        <h2 class="hover-target" style="color: rgb(29, 29, 29); margin-top: 2rem;">
+        <h2 class="hover-target hey-section" style="color: rgb(29, 29, 29); margin-top: 2rem;">
           <span style="color: rgb(255, 255, 255); padding: 15px; border-radius: 30px;"">🧠HARD</span> SKILLS
         </h2>
         <div class="hey-section" style="display: flex; gap: 1rem;">
@@ -285,7 +286,7 @@
             </div>
           </button>
         </div>
-        <h2 class="hover-target" style="margin-top: 2rem; margin-bottom: 2rem;">
+        <h2 class="hover-target  hey-section" style="margin-top: 2rem; margin-bottom: 2rem;">
           <span style="color: rgb(255, 255, 255);  border-radius: 30px;">💻SOFT</span> SKILLS
         </h2>
         <div class="socialIcons hey-section">
@@ -330,18 +331,6 @@
         cursorChar: "💖",
         // autoInsertCss: true,
       });
-
-      let typed2 = new Typed("#element2", {
-        strings: [
-        "<span>Programador web junior</span> con gran pasión por la <span > tecnología y el diseño. </span> Me he ido formando en <span> diversos bootcamps de front-end</span>, dónde he ido adquiriendo <span> multitud de competencias técnicas.</span> <br> En cuanto a la personalidad, me considero una persona con <span > grandes facilidades comunicativas </span>, <span >autodidacta</span> y<span> muy motivado</span> por encontrar trabajo en este sector.",
-          
-        ],
-        typeSpeed: 20,
-        loop: false,
-        showCursor: true,
-        cursorChar: "",
-        // autoInsertCss: true,
-      });
     </script>
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <!-- stats.js lib -->
@@ -349,7 +338,7 @@
     <!-- <script src="https://unpkg.com/nice-waves@latest"></script> -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
-      ScrollReveal().reveal('.hey-section', { interval: 10, reset: true, delay: 300});
+      ScrollReveal().reveal('.hey-section', { interval: 24, reset: true, delay: 500});
     </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
