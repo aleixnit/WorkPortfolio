@@ -7,10 +7,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
     <script
       src="https://kit.fontawesome.com/6ca83774d1.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <style>
       #particles-js {
@@ -58,7 +60,7 @@
             <a href="#about_me" class="hover-target">about me</a>
           </li>
           <li class="nav__list-item">
-            <a href="#" class="hover-target">projects</a>
+            <a href="#projectsAleix" class="hover-target">projects</a>
           </li>
           <li class="nav__list-item">
             <a href="#" class="hover-target">contact</a>
@@ -146,12 +148,15 @@
     <div class="cursor2" id="cursor2"></div>
     <div class="cursor3" id="cursor3"></div>
     <!-- <div id="waves" class="waves"></div> -->
-
+    <div style="display: flex; justify-content: center; margin-bottom: 3%;">
+      <h2 style="color:white" class="hover-target hey-section " id="about_me">
+        😊ABOUT <span style="color: lime">ME</span>
+      </h2>
+    </div>
     <section class="footer1 hey-section">
+      
       <div class="footer2">
-        <h2 class="hover-target " id="about_me">
-          ABOUT <span style="color: rgb(255, 255, 255)">ME😊</span>
-        </h2>
+        
         <p style="margin-bottom: 40px; font-size: 20px; line-height: 45px;">
           <span style="font-weight: 600">Programador web junior</span> con gran
           pasión por la <span style="font-weight: 600">tecnología y el diseño.</span> Me he ido formando
@@ -169,15 +174,15 @@
           el mundo y aplicar mis conocimientos y creatividad para crear
           proyectos que hagan una diferencia tangible. -->
         </p>
-        <div class="about_me" style="box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);">
-          <img class="about_foto hey-section" src="./cvfoto.jpg" alt="" />
+        <div class="about_me ">
+          <img class="about_foto" src="./cvfoto.jpg" alt="" />
           <div style="display: flex; flex-direction: column; width: 100%;">
             <h2 class="hover-target" style="color: rgb(255, 255, 255); text-align: left; width: fit-content; border-radius: 30px; margin-bottom: 10px;">✏️EDUCATION</h2>
             
             <div class="education_container">
-              <div><img class="hey-section" src="./ironhack.jpg" alt="ironhack"> <p class="hey-section" style="font-weight: 800;">BOOTCAMP FRONT-END</p> </div>
-              <div><img class="hey-section" src="./pimec_logotip.jpg" alt="pimec"> <p class="hey-section" style="font-weight: 800;">BOOTCAMP FRONT-END</p> </div>
-              <div><img class="hey-section" src="./logo-uoc-default.png" alt="uoc"> <p class="hey-section" style="font-weight: 800;">GRADO MULTIMEDIA</p> </div>
+              <div><img class="" src="./ironhack.jpg" alt="ironhack"> <p class="hey-section" style="font-weight: 800;">BOOTCAMP FRONT-END</p> </div>
+              <div><img class="" src="./pimec_logotip.jpg" alt="pimec"> <p class="hey-section" style="font-weight: 800;">BOOTCAMP FRONT-END</p> </div>
+              <div><img class="" src="./logo-uoc-default.png" alt="uoc"> <p class="hey-section" style="font-weight: 800;">GRADO MULTIMEDIA</p> </div>
             </div>   
           </div>
         </div>
@@ -301,8 +306,49 @@
       </div>
     </section>
 
-    <section class="portfolio_section">
+    <section class="portfolio_section" id="projectsAleix">
+<h2 class="hey-section" style="color:white"><span style="color:lime">🚀MY</span>PROJECTS</h2>
+<div class="p_section hey-section">
+  <div id="carousel">
 
+    <div class="hideLeft">
+     <img src="https://i1.sndcdn.com/artworks-000165384395-rhrjdn-t500x500.jpg">
+   </div>
+
+   <div class="prevLeftSecond">
+     <img src="https://i1.sndcdn.com/artworks-000185743981-tuesoj-t500x500.jpg">
+   </div>
+
+   <div class="prev">
+     <img src="https://i1.sndcdn.com/artworks-000158708482-k160g1-t500x500.jpg">
+   </div>
+
+   <div class="selected">
+     <img src="https://i1.sndcdn.com/artworks-000062423439-lf7ll2-t500x500.jpg">
+   </div>
+
+   <div class="next">
+     <img src="https://i1.sndcdn.com/artworks-000028787381-1vad7y-t500x500.jpg">
+   </div>
+
+   <div class="nextRightSecond">
+     <img src="https://i1.sndcdn.com/artworks-000108468163-dp0b6y-t500x500.jpg">
+   </div>
+
+   <div class="hideRight">
+     <img src="https://i1.sndcdn.com/artworks-000064920701-xrez5z-t500x500.jpg">
+   </div>
+   
+ </div>
+ <div class="buttons">
+  <button id="prev">Prev</button>
+  <button id="next">Next</button>
+</div>
+
+    </div>
+    
+  </section>
+</div>
     </section>
   
     <footer class="footer">
@@ -338,7 +384,7 @@
     <!-- <script src="https://unpkg.com/nice-waves@latest"></script> -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
-      ScrollReveal().reveal('.hey-section', { interval: 24, reset: true, delay: 500});
+      ScrollReveal().reveal('.hey-section', { interval: 16, reset: true, delay: 100});
     </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
