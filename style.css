@@ -2,6 +2,9 @@
 
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+* {
+	margin: 0	;
+}
 
 body{
 	font-family: 'Montserrat', sans-serif;
@@ -642,8 +645,13 @@ body.nav-active .nav__list-item:nth-child(10) {
   h2 {
 	font-weight: 900;
 	font-size: 64px;
-	margin-bottom: 30px;
-	color: white;
+	margin-bottom: 0px;
+	margin-top: 0;
+	color: rgb(31, 31, 31);
+  }
+
+  p {
+	margin: 0;
   }
 
   .footer1{
@@ -655,16 +663,24 @@ body.nav-active .nav__list-item:nth-child(10) {
 
   .footer2 {
 	background-color: #cdcdcd;
+	border-radius: 50px;
 	padding: 50px;
 	text-align: center;
 	color: #000;
-	width: 80%;
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	/* height: 100vw; */
 }
 
 .about_me {
 	display: flex;
-	align-items: center;
+	align-items:center;
+	background-image: linear-gradient(to bottom right, lime,rgb(107, 252, 184));
+	width: 90vw;
+	border-radius: 50px;
 	/* flex-direction: column; */
 }
 
@@ -673,6 +689,50 @@ body.nav-active .nav__list-item:nth-child(10) {
 	border-radius: 50px;
 	border: 4px solid lime;
 	margin-right: 30px;
+}
+
+.socialIcons {
+	display: flex;
+	gap: 2rem;
+}
+
+.fa-html5,
+.fa-css3-alt,
+.fa-js,
+.fa-react,
+.fa-vuejs,
+.fa-bootstrap,
+.fa-figma
+{
+	transition: color 0.3s ease-in-out;
+}
+
+.fa-html5:hover {
+	color: #f48f01;
+}
+
+.fa-css3-alt:hover {
+	color: aqua;
+}
+
+.fa-js:hover {
+	color: #fbff00;
+}
+
+.fa-react:hover {
+ color:aqua;
+}
+
+.fa-vuejs:hover {
+	color: #00ff08;
+}
+
+.fa-bootstrap:hover {
+color: #FE53BB;
+}
+
+.fa-figma:hover {
+	color: darkorchid;
 }
 
 .footer {

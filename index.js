@@ -50,6 +50,12 @@
       menu.addEventListener("click", function () {
         return toggleClass(body, "nav-active");
       });
+      // Agregar evento de clic a cada elemento de enlace dentro del menú
+    menuItems.forEach(function (menuItem) {
+      menuItem.addEventListener("click", function () {
+        body.classList.remove("nav-active");
+      });
+    });
     };
     var toggleClass = function toggleClass(element, stringClass) {
       if (element.classList.contains(stringClass))
