@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script
       src="https://kit.fontawesome.com/6ca83774d1.js"
       crossorigin="anonymous"
@@ -18,11 +19,7 @@
         width: 100%;
         height: 100%;
         top: 0;
-        z-index: -1;
-      }
-
-      #waves {
-        z-index: 5;
+        z-index: -2;
       }
     </style>
   </head>
@@ -30,7 +27,7 @@
     <header class="cd-header">
       <div class="header-wrapper">
         <div class="logo-wrap">
-          <a
+          <a data-aos="fade-up"
             href="#"
             class="hover-target"
             style="
@@ -79,12 +76,13 @@
           align-items: center;
         "
       >
-        <h1 style="color: lime">
+        <h1 class="hey-section"
+         style="color: lime">
           Hey!
           <span id="element" style="color: white"></span>
         </h1>
         <div style="display: flex; gap: 20px">
-          <button class="btn" type="button">
+          <button  class="btn hey-section" type="button">
             <strong
               ><i
                 style="color: rgb(255, 255, 255); margin-right: 5px"
@@ -101,7 +99,7 @@
               <div class="circle"></div>
             </div>
           </button>
-          <button class="btn" type="button">
+          <button  class="btn hey-section" type="button">
             <strong
               ><i
                 style="color: rgb(255, 255, 255); margin-right: 5px"
@@ -118,7 +116,7 @@
               <div class="circle"></div>
             </div>
           </button>
-          <button class="btn" type="button">
+          <button class="btn hey-section" type="button">
             <strong
               ><i
                 style="color: rgb(255, 255, 255); margin-right: 5px"
@@ -148,20 +146,20 @@
     <div class="cursor3" id="cursor3"></div>
     <!-- <div id="waves" class="waves"></div> -->
 
-    <footer class="footer1">
+    <section class="footer1 hey-section">
       <div class="footer2">
         <h2 class="hover-target" id="about_me">
           ABOUT <span style="color: rgb(255, 255, 255)">ME😊</span>
         </h2>
-        <p style="margin-bottom: 40px; font-size: 20px">
-          <span style="font-weight: 600">Programador web junior</span> con gran
+        <p id="element2" style="margin-bottom: 40px; font-size: 20px">
+          <!-- <span style="font-weight: 600">Programador web junior</span> con gran
           pasión por la <span style="font-weight: 600">tecnología y el diseño.</span> Me he ido formando
           en <span style="font-weight: 600">diversos bootcamps de front-end</span>, dónde he ido
-          adquiriendo<span style="font-weight: 600"> multitud de competencias técnicas.</span> En cuanto
+          adquiriendo<span style="font-weight: 600"> multitud de competencias técnicas.</span> <br> En cuanto
           a la personalidad, me considero una persona con
           <span style="font-weight: 600"> grandes facilidades comunicativas </span>,
           <span style="font-weight: 600">autodidacta</span> y<span style="font-weight: 600"> muy motivado</span> por encontrar
-          trabajo en este sector.
+          trabajo en este sector. -->
 
           <!-- Mi objetivo personal, es utilizar mis habilidades como
           programador web para desarrollar soluciones innovadoras que aborden
@@ -171,21 +169,22 @@
           proyectos que hagan una diferencia tangible. -->
         </p>
         <div class="about_me" style="box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);">
-          <img class="about_foto" src="./cvfoto.jpg" alt="" />
+          <img class="about_foto hey-section" src="./cvfoto.jpg" alt="" />
           <div style="display: flex; flex-direction: column; width: 100%;">
             <h2 class="hover-target" style="color: rgb(255, 255, 255); text-align: left; width: fit-content; border-radius: 30px; margin-bottom: 10px;">✏️EDUCATION</h2>
+            
             <div class="education_container">
-              <div><img src="./ironhack.jpg" alt="ironhack"> <p style="font-weight: 800;">BOOTCAMP FRONT-END</p> </div>
-              <div><img src="./pimec_logotip.jpg" alt="pimec"> <p style="font-weight: 800;">BOOTCAMP FRONT-END</p> </div>
-              <div><img src="./logo-uoc-default.png" alt="uoc"> <p style="font-weight: 800;">GRADO MULTIMEDIA</p> </div>
+              <div><img class="hey-section" src="./ironhack.jpg" alt="ironhack"> <p style="font-weight: 800;">BOOTCAMP FRONT-END</p> </div>
+              <div><img class="hey-section" src="./pimec_logotip.jpg" alt="pimec"> <p style="font-weight: 800;">BOOTCAMP FRONT-END</p> </div>
+              <div><img class="hey-section" src="./logo-uoc-default.png" alt="uoc"> <p style="font-weight: 800;">GRADO MULTIMEDIA</p> </div>
             </div>   
           </div>
         </div>
         <h2 class="hover-target" style="color: rgb(29, 29, 29); margin-top: 2rem;">
           <span style="color: rgb(255, 255, 255); padding: 15px; border-radius: 30px;"">🧠HARD</span> SKILLS
         </h2>
-        <div style="display: flex; gap: 1rem;">
-          <button class="hard-skills">Autodidacta
+        <div class="hey-section" style="display: flex; gap: 1rem;">
+          <button class="hard-skills">💪Autodidacta
             <div class="star-1">
               <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
             </div>
@@ -205,7 +204,7 @@
               <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
             </div>
           </button>
-          <button class="hard-skills">Teamwork
+          <button class="hard-skills">🤝Teamwork
             <div class="star-1">
               <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
             </div>
@@ -225,7 +224,7 @@
               <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
             </div>
           </button>
-          <button class="hard-skills">Good Comunication
+          <button class="hard-skills">🗣️Good Comunication
             <div class="star-1">
               <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
             </div>
@@ -245,7 +244,7 @@
               <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
             </div>
           </button>
-          <button class="hard-skills">Creativity
+          <button class="hard-skills">🎨Creativity
             <div class="star-1">
               <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
             </div>
@@ -265,7 +264,7 @@
               <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
             </div>
           </button>
-          <button class="hard-skills">Resolución de problemas
+          <button class="hard-skills">Problem resolution
             <div class="star-1">
               <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
             </div>
@@ -289,7 +288,7 @@
         <h2 class="hover-target" style="margin-top: 2rem; margin-bottom: 2rem;">
           <span style="color: rgb(255, 255, 255);  border-radius: 30px;">💻SOFT</span> SKILLS
         </h2>
-        <div class="socialIcons">
+        <div class="socialIcons hey-section">
           <i class="fa-brands fa-html5 fa-6x"></i>
           <i class="fa-brands fa-css3-alt fa-6x"></i>
           <i class="fa-brands fa-js fa-6x"></i>
@@ -299,8 +298,12 @@
           <i class="fa-brands fa-figma fa-6x"></i>
         </div>
       </div>
-    </footer>
+    </section>
 
+    <section class="portfolio_section">
+
+    </section>
+  
     <footer class="footer">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ea
       possimus facilis! Nisi rerum voluptate cum. Quo, ut. Eligendi ipsum
@@ -327,11 +330,32 @@
         cursorChar: "💖",
         // autoInsertCss: true,
       });
+
+      let typed2 = new Typed("#element2", {
+        strings: [
+        "<span>Programador web junior</span> con gran pasión por la <span > tecnología y el diseño. </span> Me he ido formando en <span> diversos bootcamps de front-end</span>, dónde he ido adquiriendo <span> multitud de competencias técnicas.</span> <br> En cuanto a la personalidad, me considero una persona con <span > grandes facilidades comunicativas </span>, <span >autodidacta</span> y<span> muy motivado</span> por encontrar trabajo en este sector.",
+          
+        ],
+        typeSpeed: 20,
+        loop: false,
+        showCursor: true,
+        cursorChar: "",
+        // autoInsertCss: true,
+      });
     </script>
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <!-- stats.js lib -->
     <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
     <!-- <script src="https://unpkg.com/nice-waves@latest"></script> -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      ScrollReveal().reveal('.hey-section', { interval: 10, reset: true, delay: 300});
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="./index.js"></script>
+    <script src="./gallery.js"></script>
   </body>
 </html>

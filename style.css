@@ -683,6 +683,7 @@ body.nav-active .nav__list-item:nth-child(10) {
 	background-image: linear-gradient(to bottom right, lime,rgb(107, 252, 184));
 	width: 90vw;
 	border-radius: 50px;
+	border: 7px solid rgb(179, 179, 179);
 	/* flex-direction: column; */
 }
 
@@ -754,8 +755,8 @@ color: #FE53BB;
 }
 
 .education_container img {
-	width: 100px;
-	height: 80px;
+	width: 150px;
+	height: 130px;
 	border-radius: 10px;
 	border: 7px solid rgb(255, 255, 255);
 }
@@ -767,12 +768,13 @@ color: #FE53BB;
 	padding: 12px 35px;
 	background: transparent;
 	font-size: 17px;
-	font-weight: 500;
-	color: #ffffff;
-	border: 3px solid #33ff00;
+	text-transform: uppercase;
+	font-weight: 900;
+	color: #dadada;
+	border: 3px solid #131313;
 	border-radius: 8px;
-	-webkit-box-shadow: 0 0 0 #b3fe958c;
-			box-shadow: 0 0 0 #9afe958c;
+	-webkit-box-shadow: 0 0 0 #48ff008c;
+			box-shadow: 0 0 0 #0dff008c;
 	-webkit-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
   }
@@ -857,9 +859,9 @@ color: #FE53BB;
   
   .hard-skills:hover {
 	background: transparent;
-	color: #acfe95;
-	-webkit-box-shadow: 0 0 25px #aafe958c;
-			box-shadow: 0 0 25px #9cfe958c;
+	color: #37ff00;
+	-webkit-box-shadow: 0 0 25px #33ff008c;
+			box-shadow: 0 0 25px #11ff008c;
   }
   
   .hard-skills:hover .star-1 {
@@ -929,3 +931,7 @@ color: #FE53BB;
   }
   
   .fil0 {fill:#FFFDEF}
+
+
+  /* -------------------------------- PORTFOLIO SECTION -------------------------------- */
+  
