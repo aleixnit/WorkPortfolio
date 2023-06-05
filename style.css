@@ -662,7 +662,8 @@ body.nav-active .nav__list-item:nth-child(10) {
   }
 
   .footer2 {
-	background-color: #cdcdcd;
+	background-color: rgba(239, 239, 239, 0.6);
+	border: 6px solid rgb(201, 201, 201);
 	border-radius: 50px;
 	padding: 50px;
 	text-align: center;
@@ -742,3 +743,189 @@ color: #FE53BB;
 	text-align: center;
 	color: #000;
 }
+
+
+/* -------------------------------- EDUCATION ------------------------------- */
+
+.education_container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.education_container img {
+	width: 100px;
+	height: 80px;
+	border-radius: 10px;
+	border: 7px solid rgb(255, 255, 255);
+}
+
+
+/* --------------------------- HARD SKILLS BUTTON --------------------------- */
+.hard-skills {
+	position: relative;
+	padding: 12px 35px;
+	background: transparent;
+	font-size: 17px;
+	font-weight: 500;
+	color: #ffffff;
+	border: 3px solid #33ff00;
+	border-radius: 8px;
+	-webkit-box-shadow: 0 0 0 #b3fe958c;
+			box-shadow: 0 0 0 #9afe958c;
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+  }
+  
+  .star-1 {
+	position: absolute;
+	top: 20%;
+	left: 20%;
+	width: 25px;
+	height: auto;
+	-webkit-filter: drop-shadow(0 0 0 #fffdef);
+			filter: drop-shadow(0 0 0 #fffdef);
+	z-index: -5;
+	-webkit-transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);
+	transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);
+  }
+  
+  .star-2 {
+	position: absolute;
+	top: 45%;
+	left: 45%;
+	width: 15px;
+	height: auto;
+	-webkit-filter: drop-shadow(0 0 0 #fffdef);
+			filter: drop-shadow(0 0 0 #fffdef);
+	z-index: -5;
+	-webkit-transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+	transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-3 {
+	position: absolute;
+	top: 40%;
+	left: 40%;
+	width: 5px;
+	height: auto;
+	-webkit-filter: drop-shadow(0 0 0 #fffdef);
+			filter: drop-shadow(0 0 0 #fffdef);
+	z-index: -5;
+	-webkit-transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+	transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-4 {
+	position: absolute;
+	top: 20%;
+	left: 40%;
+	width: 8px;
+	height: auto;
+	-webkit-filter: drop-shadow(0 0 0 #fffdef);
+			filter: drop-shadow(0 0 0 #fffdef);
+	z-index: -5;
+	-webkit-transition: all .8s cubic-bezier(0, 0.4, 0, 1.01);
+	transition: all .8s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-5 {
+	position: absolute;
+	top: 25%;
+	left: 45%;
+	width: 15px;
+	height: auto;
+	-webkit-filter: drop-shadow(0 0 0 #fffdef);
+			filter: drop-shadow(0 0 0 #fffdef);
+	z-index: -5;
+	-webkit-transition: all .6s cubic-bezier(0, 0.4, 0, 1.01);
+	transition: all .6s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-6 {
+	position: absolute;
+	top: 5%;
+	left: 50%;
+	width: 5px;
+	height: auto;
+	-webkit-filter: drop-shadow(0 0 0 #fffdef);
+			filter: drop-shadow(0 0 0 #fffdef);
+	z-index: -5;
+	-webkit-transition: all .8s ease;
+	transition: all .8s ease;
+  }
+  
+  .hard-skills:hover {
+	background: transparent;
+	color: #acfe95;
+	-webkit-box-shadow: 0 0 25px #aafe958c;
+			box-shadow: 0 0 25px #9cfe958c;
+  }
+  
+  .hard-skills:hover .star-1 {
+	position: absolute;
+	top: -80%;
+	left: -30%;
+	width: 25px;
+	height: auto;
+	-webkit-filter: drop-shadow(0 0 10px #fffdef);
+			filter: drop-shadow(0 0 10px #fffdef);
+	z-index: 2;
+  }
+  
+  .hard-skills:hover .star-2 {
+	position: absolute;
+	top: -25%;
+	left: 10%;
+	width: 15px;
+	height: auto;
+	-webkit-filter: drop-shadow(0 0 10px #fffdef);
+			filter: drop-shadow(0 0 10px #fffdef);
+	z-index: 2;
+  }
+  
+  .hard-skills:hover .star-3 {
+	position: absolute;
+	top: 55%;
+	left: 25%;
+	width: 5px;
+	height: auto;
+	-webkit-filter: drop-shadow(0 0 10px #fffdef);
+			filter: drop-shadow(0 0 10px #fffdef);
+	z-index: 2;
+  }
+  
+  .hard-skills:hover .star-4 {
+	position: absolute;
+	top: 30%;
+	left: 80%;
+	width: 8px;
+	height: auto;
+	-webkit-filter: drop-shadow(0 0 10px #fffdef);
+			filter: drop-shadow(0 0 10px #fffdef);
+	z-index: 2;
+  }
+  
+  .hard-skills:hover .star-5 {
+	position: absolute;
+	top: 25%;
+	left: 115%;
+	width: 15px;
+	height: auto;
+	-webkit-filter: drop-shadow(0 0 10px #fffdef);
+			filter: drop-shadow(0 0 10px #fffdef);
+	z-index: 2;
+  }
+  
+  .hard-skills:hover .star-6 {
+	position: absolute;
+	top: 5%;
+	left: 60%;
+	width: 5px;
+	height: auto;
+	-webkit-filter: drop-shadow(0 0 10px #fffdef);
+			filter: drop-shadow(0 0 10px #fffdef);
+	z-index: 2;
+  }
+  
+  .fil0 {fill:#FFFDEF}

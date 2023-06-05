@@ -152,7 +152,3 @@ update = function () {
 };
 requestAnimationFrame(update);
 
-const opts = {
-  flowRate: 3,
-  swayRate: 3.24,
-};
