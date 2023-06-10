@@ -644,7 +644,7 @@ body.nav-active .nav__list-item:nth-child(10) {
   /* ---------------------------- ABOUT ME SECTION ---------------------------- */
   h2 {
 	font-weight: 900;
-	font-size: 64px;
+	font-size: 3rem;
 	margin-bottom: 0px;
 	margin-top: 0;
 	color: rgb(31, 31, 31);
@@ -666,7 +666,9 @@ body.nav-active .nav__list-item:nth-child(10) {
 	box-shadow: 0 0 25px #11ff00;
 	border: 6px solid rgb(201, 201, 201);
 	border-radius: 50px;
-	padding: 50px;
+	border-top-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	padding: 20px;
 	text-align: center;
 	color: #000;
 	width: 70%;
@@ -674,7 +676,8 @@ body.nav-active .nav__list-item:nth-child(10) {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 10%;
+	margin-bottom: 3rem;
+
 	/* height: 100vw; */
 }
 
@@ -682,16 +685,20 @@ body.nav-active .nav__list-item:nth-child(10) {
 	display: flex;
 	align-items:center;
 	background-image: linear-gradient(to bottom right, lime,rgb(107, 252, 184));
-	width: 90vw;
+	width: 82vw;
 	border-radius: 50px;
+	border-top-left-radius: 0px;
+	border-bottom-right-radius: 0px;
 	border: 7px solid rgb(179, 179, 179);
 	box-shadow: 0 0 25px #00000089;
 	/* flex-direction: column; */
 }
 
 .about_foto {
-	width: 400px;
+	width: 200px;
 	border-radius: 50px;
+	border-top-left-radius: 0px;
+	border-bottom-right-radius: 0px;
 	border: 4px solid lime;
 	margin-right: 30px;
 }
@@ -751,11 +758,13 @@ color: #FE53BB;
 
  
 .education_container img {
-	width: 200px;
-	height: 170px;
+	width: 150px;
+	height: 120px;
 	border-radius: 50%;
 	border: 7px solid rgb(255, 255, 255);
 }
+
+/* ----------------------------- CARD EDUCATION ----------------------------- */
 
 
 /* --------------------------- HARD SKILLS BUTTON --------------------------- */
@@ -763,7 +772,7 @@ color: #FE53BB;
 	position: relative;
 	padding: 12px 35px;
 	background: transparent;
-	font-size: 17px;
+	font-size: 13px;
 	text-transform: uppercase;
 	font-weight: 900;
 	color: #dadada;
@@ -1015,10 +1024,132 @@ color: #FE53BB;
   #carousel div.nextRightSecond img {
 	width: 200px;
   }
+
+  /* ---------------------------- BUTTONS PROJECTS ---------------------------- */
+  .container9 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 200px;
+  }
+  
+  .container9 .btn9 {
+	height: 50px;
+	margin: 20px;
+	margin-bottom: 40px;
+	position: relative;
+	width: 155px;
+  }
+  
+  .container9 .btn9 a {
+	align-items: center;
+	background: rgba(255, 255, 255, 0.05);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 30px;
+	box-shadow: 0 15px 35px rgba(255, 255, 255, 0.2);
+	color: #fff;
+	display: flex;
+	font-size: 18px;
+	font-weight: 700;
+	left: 0;
+	top: 0;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	justify-content: center;
+	letter-spacing: 1px;
+	text-decoration: none;
+	overflow: hidden;
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(15px);
+	z-index: 1;
+	transition: 0.5s;
+  }
+  
+  .container9 .btn9:hover a {
+	letter-spacing: 2px;
+  }
+  
+  .container9 .btn9 a::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background: linear-gradient(to left,
+				  rgba(255,255,255,0.15),
+				  transparent);
+	transform: skewX(45deg) translateX(0);
+	transition: 0.5s;
+  }
+  
+  .container9 .btn9:hover a::before {
+	transform: skewX(45deg) translateX(200%);
+  }
+  
+  .container9 .btn9::before {
+	content: '';
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -5px;
+	height: 10px;
+	width: 30px;
+	background: rgb(8, 107, 183);
+	border-radius: 10px;
+	transition: 0.5s;
+	transition-delay: 0s;
+  }
+  
+  .container9 .btn9:hover::before {
+	bottom: 0;
+	height: 50%;
+	width: 80%;
+	border-radius: 30px;
+	transition-delay: 0.5s;
+  }
+  
+  .container9 .btn9::after {
+	content: '';
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: -5px;
+	height: 10px;
+	width: 30px;
+	background: lime;
+	border-radius: 10px;
+	transition: 0.5s;
+	transition-delay: 0s;
+  }
+  
+  .container9 .btn9:hover::after {
+	top: 0;
+	height: 50%;
+	width: 80%;
+	border-radius: 30px;
+	transition-delay: 0.5s;
+  }
+  
+  .container9 .btn9:nth-child(1):before,
+  .container9 .btn9:nth-child(1)::after {
+	background: lime;
+	box-shadow: 0 0 5px lime,
+	  0 0 15px lime,
+	  0 0 30px lime,
+	  0 0 60px lime;
+  }
+  
+  .container9 .btn9:active a {
+	color: #000;
+  }
+  
   
   /* --------------------------------- FOOTER --------------------------------- */
   .footer {
-	background-color: #00ff08;
+	background-image: linear-gradient(to bottom right, lime,rgb(107, 252, 184));
 	padding: 3rem;
 	text-align: center;
 	color: #000;
