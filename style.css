@@ -482,7 +482,9 @@ body.nav-active .nav__list-item:nth-child(10) {
 	height: 3rem;
 	background-size: 300% 300%;
 	backdrop-filter: blur(1rem);
-	border-radius: 5rem;
+	border-radius: 50px;
+	border-top-left-radius: 0px;
+	border-bottom-right-radius: 0px;
 	transition: 0.5s;
 	animation: gradient_301 5s ease infinite;
 	border: double 4px transparent;
