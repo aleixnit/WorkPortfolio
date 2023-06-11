@@ -7,8 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
   <link rel="stylesheet" href="./style.css" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
   <script src="https://kit.fontawesome.com/6ca83774d1.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -20,6 +18,14 @@
       height: 100%;
       top: 0;
       z-index: -2;
+    }
+
+    #texto-intro {
+      background-color: transparent;
+    }
+
+    #texto-intro::before {
+      background-color: transparent;
     }
   </style>
 </head>
@@ -68,67 +74,76 @@
 
   <!-- ---------------------------- MAIN SECTION ----------------------------- -->
   <div class="section full-height over-hide">
-    <div class="switch-wrap" style="
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        ">
-      <h1 class="hey-section" style="color: lime">
-        Hey!
-        <span id="element" style="color: white"></span>
-      </h1>
-      <p style="
-      margin-bottom: 40px;
-      font-size: 14px;
-      line-height: 25px;
-      font-weight: 300;
-    ">
-  Programador web junior con gran pasión por la tecnología y el diseño.
-  Me he ido formando en diversos bootcamps de front-end, dónde he ido
-  adquiriendo multitud de competencias técnicas. En cuanto a la
-  personalidad, me considero una persona con grandes facilidades
-  comunicativas , autodidacta y muy motivado por encontrar trabajo en
-  este sector.
-</p>
-      <div style="display: flex; gap: 20px">
-        <button class="btn hey-section" type="button">
-          <strong><i style="color: rgb(255, 255, 255); margin-right: 5px" class="fab fa-github"></i>
-            GITHUB</strong>
-          <div id="container-stars">
-            <div id="stars"></div>
-          </div>
-          <div id="glow">
-            <div class="circle"></div>
-            <div class="circle"></div>
-          </div>
-        </button>
-        <button class="btn hey-section" type="button">
-          <strong><i style="color: rgb(255, 255, 255); margin-right: 5px" class="fab fa-linkedin"></i>
-            LINKEDIN</strong>
-          <div id="container-stars">
-            <div id="stars"></div>
-          </div>
-          <div id="glow">
-            <div class="circle"></div>
-            <div class="circle"></div>
-          </div>
-        </button>
-        <button class="btn hey-section" type="button">
-          <strong><i style="color: rgb(255, 255, 255); margin-right: 5px" class="fab fa-instagram"></i>
-            INSTAGRAM</strong>
-          <div id="container-stars">
-            <div id="stars"></div>
-          </div>
-          <div id="glow">
-            <div class="circle"></div>
-            <div class="circle"></div>
-          </div>
-        </button>
+    <img id="foto_personal" class="about_foto" src="./cvfoto.jpg" alt="" />
+
+      <div class="switch-wrap" style="
+            display: flex;
+            flex-direction: column;
+            justify-content: right;
+            align-items: right;
+          ">
+        <h1 class="hey-section" style="color: lime; text-align: left;">
+          Hey!
+          <span id="element" style="color: white"></span>
+        </h1>
+
+        <p  class="hey-section" style="
+        font-size: 15px;
+        line-height: 30px;
+        font-weight: 300;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      ">
+        Programador web junior <span id="texto-intro" style="font-weight: 600;">con gran pasión por la tecnología y el diseño.</span>
+        Me he ido formando en diversos bootcamps de Front-end, dónde he ido
+        adquiriendo multitud de competencias técnicas. En cuanto a la
+        personalidad, me considero una persona con <span style="font-weight: 600; text-decoration: none;">
+          grandes facilidades
+          comunicativas, autodidacta y muy motivado por encontrar trabajo en
+          este sector.
+        </span>
+      </p>
+        <div style="display: flex; justify-content: start; gap: 20px">
+          <button class="btn hey-section" type="button">
+            <strong><i style="color: rgb(255, 255, 255); margin-right: 5px" class="fab fa-github"></i>
+              GITHUB</strong>
+            <div id="container-stars">
+              <div id="stars"></div>
+            </div>
+            <div id="glow">
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+          </button>
+          <button class="btn hey-section" type="button">
+            <strong><i style="color: rgb(255, 255, 255); margin-right: 5px" class="fab fa-linkedin"></i>
+              LINKEDIN</strong>
+            <div id="container-stars">
+              <div id="stars"></div>
+            </div>
+            <div id="glow">
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+          </button>
+          <button class="btn hey-section" type="button">
+            <strong><i style="color: rgb(255, 255, 255); margin-right: 5px" class="fab fa-instagram"></i>
+              INSTAGRAM</strong>
+            <div id="container-stars">
+              <div id="stars"></div>
+            </div>
+            <div id="glow">
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+          </button>
+        </div>
       </div>
-    </div>
+
     <div id="particles-js"></div>
   </div>
+
+
   <div class="cursor" id="cursor"></div>
   <div class="cursor2" id="cursor2"></div>
   <div class="cursor3" id="cursor3"></div>
@@ -151,7 +166,6 @@
             ✏️EDUCATION
           </h2> -->
       <div class="about_me">
-        <img  class="about_foto" src="./cvfoto.jpg" alt="" />
         <div style="display: flex; flex-direction: column; width: 100%">
           
 
@@ -778,9 +792,9 @@
 
   <footer class="footer">
     <div style="display: flex; gap: 20px">
-      <i class="fa-brands fa-github fa-3x"></i>
-      <i class="fa-brands fa-linkedin-in fa-3x"></i>
-      <i class="fa-brands fa-instagram fa-3x"></i>
+      <i class="fa-brands fa-github fa-2x"></i>
+      <i class="fa-brands fa-linkedin-in fa-2x"></i>
+      <i class="fa-brands fa-instagram fa-2x"></i>
     </div>
     Copyright © 2023 Aleix Aguilar with ❤️ - Todos los derechos reservados.
   </footer>
@@ -813,14 +827,10 @@
   <script src="https://unpkg.com/scrollreveal"></script>
   <script>
     ScrollReveal().reveal(".hey-section", {
-      interval: 10,
+      interval: 16,
       reset: true,
       delay: 100,
     });
-  </script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
   </script>
   <script src="./index.js"></script>
   <script src="./gallery.js"></script>
