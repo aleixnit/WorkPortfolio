@@ -857,9 +857,10 @@ color: #FE53BB;
 	position: relative;
 	padding: 12px 35px;
 	background: transparent;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 13px;
 	text-transform: uppercase;
-	font-weight: 900;
+	font-weight: 600;
 	color: #dadada;
 	border: 3px solid #131313;
 	border-radius: 50px;
@@ -1483,7 +1484,9 @@ color: #FE53BB;
 /* ------------------------------- SOFT SKILLS ------------------------------ */
 .socialIcons {
 	display: flex;
-	flex-direction: column;
+	flex-direction:row;
+	flex-wrap: wrap;
+	justify-content: center;
 	gap: 2rem;
 }
 	}
