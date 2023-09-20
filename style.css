@@ -1491,7 +1491,7 @@ strong {
 	width: 0;
 	height: 0;
 	opacity: 0;
-	background-color: #75ff43;
+	background-color: rgb(199, 255, 78);
 	z-index: 1;
 	-webkit-transition: all 200ms linear;
 	transition: all 200ms linear;
@@ -1630,7 +1630,7 @@ strong {
     align-items: center;
     background-image: linear-gradient(
       to bottom right,
-      lime,
+      rgb(199, 255, 78),
       rgb(107, 252, 184)
     );
     width: 82vw;
@@ -1676,11 +1676,24 @@ strong {
 
   /* ------------------------------- SOFT SKILLS ------------------------------ */
   .socialIcons {
+	margin-top: 2vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2rem;
+    gap: 1.5rem;
+  }
+
+  .icon-soft-color {
+	width: 60px;
+	height: 55px;
+	padding-top: 10px;
+	border-radius: 50%;
+	background: linear-gradient(
+      to bottom right,
+      rgb(199, 255, 78),
+      rgb(107, 252, 184)
+    );
   }
 
   /* -------------------------------- PORTFOLIO SECTION -------------------------------- */
@@ -1794,7 +1807,7 @@ strong {
     top: -5px;
     height: 10px;
     width: 30px;
-    background: lime;
+    background: rgb(199, 255, 78);
     border-radius: 10px;
     transition: 0.5s;
     transition-delay: 0s;
@@ -1810,7 +1823,7 @@ strong {
 
   .container9 .btn9:nth-child(1):before,
   .container9 .btn9:nth-child(1)::after {
-    background: lime;
+    background: rgb(199, 255, 78);
     box-shadow: 0 0 5px lime, 0 0 15px lime, 0 0 30px lime, 0 0 60px lime;
   }
 
@@ -1822,7 +1835,7 @@ strong {
   .footer {
     background-image: linear-gradient(
       to bottom right,
-      lime,
+      rgb(199, 255, 78),
       rgb(107, 252, 184)
     );
     padding: 3rem;
