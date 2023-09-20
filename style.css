@@ -24,6 +24,35 @@ a:hover {
 	text-decoration: none;
 }
 
+h2 {
+	font-weight: 900;
+	font-size: 3rem;
+	margin-bottom: 0px;
+	margin-top: 0;
+	color: rgb(31, 31, 31);
+
+  }
+
+  p {
+	margin: 0;
+  }
+
+#particles-js {
+	background-color: rgb(10, 9, 9);
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	z-index: -2;
+  }
+
+  #texto-intro {
+	background-color: transparent;
+  }
+
+  #texto-intro::before {
+	background-color: transparent;
+  }
 /* #Cursor
 ================================================== */
 .cursor,
@@ -101,7 +130,16 @@ a:hover {
     position: relative;
 	width: calc(100% - 100px);
 	margin-left: 50px;
-} 
+}
+
+.logo_principal {
+	text-decoration: none;
+              background-color: rgb(15, 15, 15);
+              border-radius: 50px;
+	border-top-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+              padding: 20px;
+}
 .logo-wrap {
 	position: absolute;
 	display:block;
@@ -380,6 +418,7 @@ body.nav-active .nav__list-item:nth-child(10) {
           transition-delay: 1.7s;
 }
 
+/* ------------------------------- SWITCH WRAP ------------------------------ */
 .switch-wrap {
 	position: absolute;
 	top: 50%;
@@ -392,6 +431,10 @@ body.nav-active .nav__list-item:nth-child(10) {
 	margin-right: 6rem;
 	text-align: left;
 }
+
+.titulo_typed_js {
+	color: white;
+}
 .switch-wrap h1 {
 	font-weight: 900;
 	font-size: 46px;
@@ -402,35 +445,8 @@ body.nav-active .nav__list-item:nth-child(10) {
 	/* margin-bottom: 40px; */
 	-webkit-transition: all 300ms linear;
 	transition: all 300ms linear; 
-}
-@media screen and (max-width: 1200px){
-  .switch-wrap h1 {
-    font-size: 16px;
-	margin-top: 10vh;
-  }
-
-  #foto_personal {
-	width: 50px;
-	border-radius: 120px;
-	border-top-left-radius: 0px;
-	border-bottom-right-radius: 0px;
-	border: 4px solid lime;
-	margin-right: 30px;
-	position: relative;
-	right: 0;
-	top: 0;
-  }
-  .about_foto {
-	width: 100px;
-	border-radius: 120px;
-	border-top-left-radius: 0px;
-	border-bottom-right-radius: 0px;
-	border: 4px solid lime;
-	margin-right: 30px;
-	position: relative;
-	right: 0;
-	top: 0;
-}
+	color: lime; 
+	text-align: left;
 }
 .switch-wrap p {
 	font-weight: 600;
@@ -495,8 +511,37 @@ body.nav-active .nav__list-item:nth-child(10) {
 	background: #000;
 }
 
+/* ------------------------------ FOTO PERSONAL ----------------------------- */
+#foto_personal {
+	width: 50px;
+	border-radius: 120px;
+	border-top-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border: 4px solid lime;
+	margin-right: 30px;
+	position: relative;
+	right: 0;
+	top: 0;
+  }
+  .about_foto {
+	width: 100px;
+	border-radius: 120px;
+	border-top-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border: 4px solid lime;
+	margin-right: 30px;
+	position: relative;
+	right: 0;
+	top: 0;
+}
 
 /* -------------------------- BOTÓN REDES SOCIALES -------------------------- */
+.social_buttons {
+	display: flex;
+	 justify-content:start;
+	  gap: 20px;
+}
+
 .btn {
 	margin-top: 20px;
 	display: flex;
@@ -671,18 +716,11 @@ body.nav-active .nav__list-item:nth-child(10) {
 
 
   /* ---------------------------- ABOUT ME SECTION ---------------------------- */
-  h2 {
-	font-weight: 900;
-	font-size: 3rem;
-	margin-bottom: 0px;
-	margin-top: 0;
-	color: rgb(31, 31, 31);
+  .sobremi_section {
+	display: flex; 
+	justify-content: center; 
+	margin-bottom: 3%;
   }
-
-  p {
-	margin: 0;
-  }
-
   .footer1{
 	width: 100%;
 	display:flex;
@@ -722,6 +760,12 @@ body.nav-active .nav__list-item:nth-child(10) {
 	border: 7px solid rgb(179, 179, 179);
 	box-shadow: 0 0 25px #00000089;
 	/* flex-direction: column; */
+}
+
+.contenido_greenbox {
+	display: flex; 
+	flex-direction: column; 
+	width: 100%;
 }
 
 .about_foto {
@@ -1199,42 +1243,125 @@ color: #FE53BB;
 	align-items: center;
 }
 
-#foto_personal {
-	z-index: 50;
-	width: 350px;
-	position: absolute;
-	top: 25%;
-	right: 7.5%;
-}
-
-/* * {
-	border: 1px solid red;
-} */
 
 /* --------------------------- MEDIA QUERYS MOBILE -------------------------- */
 @media only screen and (max-width : 900px) {
+
+	/* --------------------------------- NAVBAR --------------------------------- */
+	.cd-header{
+		position: fixed;
+		width:100vw;
+		top:-2%;
+		left:0;
+		z-index:100;
+	} 
+	.header-wrapper{
+		position: relative;
+		width: 87vw;
+		margin-left: 5vw;
+	}
+	
+	.logo_principal {
+		text-decoration: none;
+				  background-color: rgb(0, 0, 0);
+				  border-radius: 50px;
+		border-top-right-radius: 0px;
+		border-bottom-left-radius: 0px;
+				  padding: 20px;
+	}
+	.logo-wrap {
+		position: absolute;
+		display:block;
+		left:0;
+		top: 40px;
+		cursor: pointer;
+	}
+	.logo-wrap a {
+		cursor: pointer;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 900;
+		font-size: 20px;
+		line-height: 20px;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		color: #fff;
+		transition : all 0.3s ease-out;
+	}
+	.logo-wrap a span{ 
+		color: #75ff43;
+	}
+	.logo-wrap a:hover {
+		opacity: 0.9;
+	}
+	.nav-but-wrap{ 
+		margin-top: 9px;
+	}
+	.menu-icon {
+		background-color: #000;
+		padding: 3vw;
+		border-radius: 50%;
+	}
+
+	/* ------------------------------- FOTO ALEIX ------------------------------- */
 	#foto_personal {
 		z-index: 50;
-		width: 200px;
+		width: 35vw;
+		border-radius: 15vw;
+		border-top-right-radius: 0px;
+		border-bottom-left-radius: 0px;
+		border: 4px solid lime;
+		position: relative;
+		right: 20%;
+		top: 0;
+		margin-bottom: 4vw;
+	  }
+
+	/* ------------------------------- SWITCH WRAP ------------------------------ */
+	.switch-wrap {
 		position: absolute;
-		bottom: 0%;
-		right: 7.5%;
+		top: 50%;
+		left: 10%;
+		z-index: 10;
+		transform: translateY(-50%);
+		width: 80%;
+		-webkit-transition: all 500ms linear;
+		transition: all 500ms linear; 
+		display: flex;
+            flex-direction:column;
+            justify-content: right;
+            align-items: right;
 	}
+	.switch-wrap h1 {
+		font-weight: 900;
+		font-size: 24px;
+		line-height: 1;
+		color: lime; 
+		text-align: center;
+		text-transform: uppercase;
+		/* margin-bottom: 40px; */
+		-webkit-transition: all 300ms linear;
+		transition: all 300ms linear; 
+	}
+
 	.switch-wrap p {
 		font-weight: 600;
-		font-size: 14px;
+		font-size: 12px;
 		letter-spacing: 1px;
 		line-height: 1;
 		color: #ffffff;
 		text-align: center;
 		margin-top: 15px;
-		margin-left: 65px;
-
-		/* padding: 0px 35% */
+		font-size: 15px;
+        line-height: 30px;
+        font-weight: 300;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
 	}
+
 	.switch-wrap p span {
 		position: relative;
 	}
+
 	.switch-wrap p span:before {
 		position: absolute;
 		content: '';
@@ -1246,7 +1373,91 @@ color: #FE53BB;
 		-webkit-transition: all 300ms linear;
 		transition: all 300ms linear; 
 	}
+
 	.switch-wrap p span:nth-child(2):before {
 		opacity: 0;
 	}
+
+	/* -------------------------- REDES SOCIALES BUTTON ------------------------- */
+	.social_buttons {
+		display: flex;
+		flex-direction: column;
+		 justify-content:center;
+		 align-items: center;
+		  gap: 20px;
+	}
+
+	/* ---------------------------- ABOUT ME SECTION ---------------------------- */
+	.sobremi_section {
+		display: flex; 
+		justify-content: center; 
+		margin-bottom: 3%;
+	  }
+	  .footer1{
+		width: 100%;
+		display:flex;
+		/* justify-content: center; */
+		/* background-color: #00ff08; */
+	  }
+	
+	  .footer2 {
+		/* background-color: rgba(239, 239, 239, 0.6); */
+		background-image: linear-gradient(to bottom left, rgba(255, 255, 255, 0.6),rgba(255, 255, 255, 0.4));
+		box-shadow: 0 0 25px #11ff00;
+		border: 6px solid rgb(201, 201, 201);
+		border-radius: 50px;
+		border-top-right-radius: 0px;
+		border-bottom-left-radius: 0px;
+		padding: 20px;
+		text-align: center;
+		color: #000;
+		width: 70%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 3rem;
+	
+		/* height: 100vw; */
+	}
+	
+	.about_me {
+		display: flex;
+		align-items:center;
+		background-image: linear-gradient(to bottom right, lime,rgb(107, 252, 184));
+		width: 82vw;
+		border-radius: 50px;
+		border-top-left-radius: 0px;
+		border-bottom-right-radius: 0px;
+		border: 7px solid rgb(179, 179, 179);
+		box-shadow: 0 0 25px #00000089;
+		/* flex-direction: column; */
+	}
+	
+	.contenido_greenbox {
+		display: flex; 
+		flex-direction: column; 
+		width: 100%;
+	}
+
+	/* -------------------------------- EDUCATION ------------------------------- */
+
+.education_container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: right;
+	padding: 1rem;
+}
+
+
+ 
+.education_container img {
+	width: 15vw;
+	height: 13vw;
+	border-radius: 7vw;
+	border-top-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border: 4px solid rgb(255, 255, 255);
+}
 	}

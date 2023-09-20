@@ -10,24 +10,6 @@
   <script src="https://kit.fontawesome.com/6ca83774d1.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <style>
-    #particles-js {
-      background-color: rgb(10, 9, 9);
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      z-index: -2;
-    }
-
-    #texto-intro {
-      background-color: transparent;
-    }
-
-    #texto-intro::before {
-      background-color: transparent;
-    }
-  </style>
 </head>
 
 <body>
@@ -35,15 +17,8 @@
   <header class="cd-header">
     <div class="header-wrapper">
       <div class="logo-wrap">
-        <a data-aos="fade-up" href="#" class="hover-target" style="
-              text-decoration: none;
-              background-color: rgb(15, 15, 15);
-              border-radius: 50px;
-	border-top-right-radius: 0px;
-	border-bottom-left-radius: 0px;
-              padding: 20px;
-            "><span>aleix</span>aguilar</a>
-        <button id="translateToEnglish" onclick="translateToEnglish()">Traducir a inglés</button>
+        <a data-aos="fade-up" href="#" class="hover-target logo_principal"><span>aleix</span>aguilar</a>
+        <button id="translateToEnglish" onclick="translateToEnglish()">Inglés</button>
       </div>
 
       <div class="nav-but-wrap">
@@ -76,49 +51,20 @@
 
   <!-- ---------------------------- MAIN SECTION ----------------------------- -->
   <div class="section full-height over-hide">
-    <img id="foto_personal" class="about_foto" src="./assets/cvfoto.jpg" alt="foto perfil" />
+    <!-- <img id="foto_personal" class="about_foto" src="./assets/cvfoto.jpg" alt="foto perfil" /> -->
 
-    <div class="switch-wrap" style="
-            display: flex;
-            flex-direction:column;
-            justify-content: right;
-            align-items: right;
-          ">
-      <h1 class="hey-section" style="color: lime; text-align: left;">
+    <div class="switch-wrap">
+      <h1 class="hey-section">
         Hey!
-        <span id="element" style="color: white"></span>
+        <span id="element" class="titulo_typed_js"></span>
       </h1>
 
-      <p class="hey-section engDescripcion" style="
-        font-size: 15px;
-        line-height: 30px;
-        font-weight: 300;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-      ">
+      <p class="hey-section engDescripcion">
         Programador web junior <span id="texto-intro" style="font-weight: 600;">con gran pasión por la tecnología y el
           diseño.</span>
-        Me he ido formando en diversos bootcamps de Front-end, dónde he ido
-        adquiriendo multitud de competencias técnicas. En cuanto a la
-        personalidad, me considero una persona con <span style="font-weight: 600; text-decoration: none;">
-          grandes facilidades
-          comunicativas, autodidacta y muy motivado por encontrar trabajo en
-          este sector.
-        </span>
       </p>
-      <div style="display: flex; justify-content: start; gap: 20px">
-        <button class="btn hey-section" type="button">
-          <strong><i style="color: rgb(255, 255, 255); margin-right: 5px" class="fab fa-github"></i>
-            GITHUB</strong>
-          <div id="container-stars">
-            <div id="stars"></div>
-          </div>
-          <div id="glow">
-            <div class="circle"></div>
-            <div class="circle"></div>
-          </div>
-        </button>
-        <button class="btn hey-section" type="button">
+      <div class="social_buttons">
+        <button class="btn" type="button">
           <strong><i style="color: rgb(255, 255, 255); margin-right: 5px" class="fab fa-linkedin"></i>
             LINKEDIN</strong>
           <div id="container-stars">
@@ -129,9 +75,9 @@
             <div class="circle"></div>
           </div>
         </button>
-        <button class="btn hey-section" type="button">
-          <strong><i style="color: rgb(255, 255, 255); margin-right: 5px" class="fab fa-instagram"></i>
-            INSTAGRAM</strong>
+        <button class="btn" type="button">
+          <strong><i style="color: rgb(255, 255, 255); margin-right: 5px" class="fab fa-github"></i>
+            GITHUB</strong>
           <div id="container-stars">
             <div id="stars"></div>
           </div>
@@ -152,13 +98,15 @@
   <div class="cursor3" id="cursor3"></div>
 
   <!-- ------------------------------ ABOUT ME ------------------------------- -->
-  <div style="display: flex; justify-content: center; margin-bottom: 3%">
+  <div class="sobremi_section">
     <h2 style="color: white" class="hover-target hey-section tSobremi">
       😊SOBRE <span style="color: lime">MI</span>
     </h2>
   </div>
   <section class="footer1 hey-section">
+    
     <div id="about_me" class="footer2">
+      <img id="foto_personal" class="about_foto" src="./assets/cvfoto.jpg" alt="foto perfil" />
       <!-- <h2 class="hover-target" style="
                 color: rgb(255, 255, 255);
                 text-align: left;
@@ -169,11 +117,8 @@
             ✏️EDUCATION
           </h2> -->
       <div class="about_me">
-        <div style="display: flex; flex-direction: column; width: 100%">
-
-
+        <div class="contenido_greenbox">
           <div class="education_container">
-
             <div>
               <img class="" src="./assets/ironhack.jpg" alt="ironhack" />
               <p class="hey-section" style="font-weight: 800">
