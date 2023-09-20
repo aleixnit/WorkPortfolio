@@ -1317,20 +1317,6 @@ color: #FE53BB;
 		border-radius: 50%;
 	}
 
-	/* ------------------------------- FOTO ALEIX ------------------------------- */
-	#foto_personal {
-		z-index: 50;
-		width: 35vw;
-		border-radius: 15vw;
-		border-top-right-radius: 0px;
-		border-bottom-left-radius: 0px;
-		border: 4px solid lime;
-		position: relative;
-		right: 20%;
-		top: 0;
-		margin-bottom: 4vw;
-	  }
-
 	/* ------------------------------- SWITCH WRAP ------------------------------ */
 	.switch-wrap {
 		position: absolute;
@@ -1402,11 +1388,25 @@ color: #FE53BB;
 		  gap: 20px;
 	}
 
+		/* ------------------------------- FOTO ALEIX ------------------------------- */
+		#foto_personal {
+			z-index: 50;
+			width: 40vw;
+			border-radius: 10vw;
+			border-top-right-radius: 0px;
+			border-bottom-left-radius: 0px;
+			border: 4px solid lime;
+			position: relative;
+			margin:0;
+		  }
+	
 	/* ---------------------------- ABOUT ME SECTION ---------------------------- */
 	.sobremi_section {
 		display: flex; 
+		flex-direction: column;
 		justify-content: center; 
-		margin-bottom: 3%;
+		align-items: center;
+
 	  }
 	  .footer1{
 		width: 100%;
