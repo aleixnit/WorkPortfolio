@@ -1251,6 +1251,22 @@ color: #FE53BB;
 
 
 /* --------------------------- MEDIA QUERYS MOBILE -------------------------- */
+/* --------------------------- MEDIA QUERYS MOBILE -------------------------- */
+/* --------------------------- MEDIA QUERYS MOBILE -------------------------- */
+/* --------------------------- MEDIA QUERYS MOBILE -------------------------- */
+/* --------------------------- MEDIA QUERYS MOBILE -------------------------- */
+/* --------------------------- MEDIA QUERYS MOBILE -------------------------- */
+/* --------------------------- MEDIA QUERYS MOBILE -------------------------- */
+/* --------------------------- MEDIA QUERYS MOBILE -------------------------- */
+/* --------------------------- MEDIA QUERYS MOBILE -------------------------- */
+/* --------------------------- MEDIA QUERYS MOBILE -------------------------- */
+/* --------------------------- MEDIA QUERYS MOBILE -------------------------- */
+/* --------------------------- MEDIA QUERYS MOBILE -------------------------- */
+/* --------------------------- MEDIA QUERYS MOBILE -------------------------- */
+/* --------------------------- MEDIA QUERYS MOBILE -------------------------- */
+/* --------------------------- MEDIA QUERYS MOBILE -------------------------- */
+/* --------------------------- MEDIA QUERYS MOBILE -------------------------- */
+
 @media only screen and (max-width : 900px) {
 
 	h2 {
@@ -1489,4 +1505,156 @@ color: #FE53BB;
 	justify-content: center;
 	gap: 2rem;
 }
+
+  /* -------------------------------- PORTFOLIO SECTION -------------------------------- */
+  .portfolio_section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  }
+
+  .p_section {
+	width: 80%;
+	background-color: transparent;
+	height: 60vh;
+  }
+
+ /* ---------------------------- BUTTONS PROJECTS ---------------------------- */
+
+ .container9 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 150px;
+	margin-bottom: 1vh;
+  }
+  
+  .container9 .btn9 {
+	height: 50px;
+	margin: 20px;
+	position: relative;
+	width: 155px;
+  }
+  
+  .container9 .btn9 a {
+	align-items: center;
+	background: rgba(255, 255, 255, 0.05);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 30px;
+	box-shadow: 0 15px 35px rgba(255, 255, 255, 0.2);
+	color: #fff;
+	display: flex;
+	font-size: 11px;
+	font-weight: 700;
+	left: 0;
+	top: 0;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	justify-content: center;
+	letter-spacing: 1px;
+	text-decoration: none;
+	overflow: hidden;
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(15px);
+	z-index: 1;
+	transition: 0.5s;
+  }
+  
+  .container9 .btn9:hover a {
+	letter-spacing: 2px;
+  }
+  
+  .container9 .btn9 a::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background: linear-gradient(to left,
+				  rgba(255,255,255,0.15),
+				  transparent);
+	transform: skewX(45deg) translateX(0);
+	transition: 0.5s;
+  }
+  
+  .container9 .btn9:hover a::before {
+	transform: skewX(45deg) translateX(200%);
+  }
+  
+  .container9 .btn9::before {
+	content: '';
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -5px;
+	height: 10px;
+	width: 30px;
+	background: rgb(8, 107, 183);
+	border-radius: 10px;
+	transition: 0.5s;
+	transition-delay: 0s;
+  }
+  
+  .container9 .btn9:hover::before {
+	bottom: 0;
+	height: 50%;
+	width: 80%;
+	border-radius: 30px;
+	transition-delay: 0.5s;
+  }
+  
+  .container9 .btn9::after {
+	content: '';
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: -5px;
+	height: 10px;
+	width: 30px;
+	background: lime;
+	border-radius: 10px;
+	transition: 0.5s;
+	transition-delay: 0s;
+  }
+  
+  .container9 .btn9:hover::after {
+	top: 0;
+	height: 50%;
+	width: 80%;
+	border-radius: 30px;
+	transition-delay: 0.5s;
+  }
+  
+  .container9 .btn9:nth-child(1):before,
+  .container9 .btn9:nth-child(1)::after {
+	background: lime;
+	box-shadow: 0 0 5px lime,
+	  0 0 15px lime,
+	  0 0 30px lime,
+	  0 0 60px lime;
+  }
+  
+  .container9 .btn9:active a {
+	color: #000;
+  }
+
+    /* --------------------------------- FOOTER --------------------------------- */
+	.footer {
+		background-image: linear-gradient(to bottom right, lime,rgb(107, 252, 184));
+		padding: 3rem;
+		text-align: center;
+		color: #000;
+		font-weight: 400;
+		font-size: 12px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+	}
+  
 	}
