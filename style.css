@@ -1252,6 +1252,15 @@ color: #FE53BB;
 /* --------------------------- MEDIA QUERYS MOBILE -------------------------- */
 @media only screen and (max-width : 900px) {
 
+	h2 {
+		font-weight: 900;
+		font-size: 1.5rem;
+		margin-bottom: 0px;
+		margin-top: 0;
+		color: rgb(31, 31, 31);
+	
+	  }
+
 	/* --------------------------------- NAVBAR --------------------------------- */
 	.cd-header{
 		position: fixed;
