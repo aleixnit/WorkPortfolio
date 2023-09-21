@@ -16,7 +16,7 @@ let projects = document.querySelector('.tProjects');
 
 function translateToEnglish() {
   console.log("has hecho click");
-  buttonEnglish.textContent = "English";
+  buttonEnglish.textContent = "";
   navInicio.textContent = "Home";
   navSobremi.textContent = "About me";
   navProyectos.textContent = 'Projects';
