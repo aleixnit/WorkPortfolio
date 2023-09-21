@@ -768,6 +768,23 @@ strong {
   top: 0;
 }
 
+/* -------------------------------- EDUCATION ------------------------------- */
+
+.education_container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 1rem;
+  }
+  
+  .education_container img {
+	width: 150px;
+	height: 120px;
+	border-radius: 50px;
+	border-top-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border: 7px solid rgb(255, 255, 255);
+  }
 /* ------------------------------- SOFT SKILLS ------------------------------ */
 .socialIcons {
   display: flex;
@@ -811,26 +828,6 @@ strong {
 .fa-figma:hover {
   color: darkorchid;
 }
-
-/* -------------------------------- EDUCATION ------------------------------- */
-
-.education_container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 1rem;
-}
-
-.education_container img {
-  width: 150px;
-  height: 120px;
-  border-radius: 50px;
-  border-top-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border: 7px solid rgb(255, 255, 255);
-}
-
-/* ----------------------------- CARD EDUCATION ----------------------------- */
 
 /* --------------------------- HARD SKILLS BUTTON --------------------------- */
 .box_hardskills {
@@ -1308,8 +1305,6 @@ strong {
     /* padding: 3vw; */
     border-radius: 50%;
   }
-
-  /* ------------------------------- LO D AHORA ------------------------------- */
   .nav-but-wrap {
 	position: relative;
 	display: inline-block;
@@ -1547,13 +1542,20 @@ strong {
   /* ------------------------------- FOTO ALEIX ------------------------------- */
   #foto_personal {
     z-index: 50;
-    width: 40vw;
+    width: 60vw;
     border-radius: 10vw;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border: 4px solid rgb(199, 255, 78);
     position: relative;
-    margin: 0;
+    margin-top: 5vh;
+	margin-right: 0vw;
+  }
+
+  .texto_sobremi {
+	text-align: center;
+	font-size: 13px;
+	padding: 10vw;
   }
 
   /* ---------------------------- ABOUT ME SECTION ---------------------------- */
@@ -1622,19 +1624,26 @@ strong {
 
   .education_container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
     align-items: right;
     padding: 1rem;
   }
 
   .education_container img {
-    width: 15vw;
-    height: 13vw;
+    width: 16vw;
+    height: 14vw;
     border-radius: 7vw;
     border-top-left-radius: 0px;
     border-bottom-right-radius: 0px;
-    border: 4px solid rgb(255, 255, 255);
+    border: 3px solid rgb(255, 255, 255);
+	background-color: white;
+  }
+
+  .education_text {
+	margin-top: 3vh;
+	font-size: 14px;
+	font-weight: 400;
   }
 
   /* --------------------------- HARD SKILLS BUTTON --------------------------- */
