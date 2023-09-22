@@ -864,8 +864,10 @@
   <script>
     //PRELOADER PAGINA WEB
 window.onload = function() {
-  $('#onload').fadeOut();
-  $('body').removeClass('hiddenloader');
+  setTimeout(function() {
+                $('#onload').fadeOut();
+                $('body').removeClass('hiddenloader');
+            }, 3000); // 1500 milisegundos = 1.5 segundos
 }
 
   </script>
