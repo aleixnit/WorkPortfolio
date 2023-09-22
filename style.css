@@ -11,6 +11,7 @@
 /* ---------------------------- PRELOADER PAGINA ---------------------------- */
 .hiddenloader {
   /* overflow: hidden; */
+  /* overflow: scroll; */
 }
 
 .centrado {
@@ -391,35 +392,35 @@ align-items: center;
 }
 
 .cell:nth-child(2) {
-  --cell-color: #0CFD95;
+  --cell-color: #8fff4e;
 }
 
 .cell:nth-child(3) {
-  --cell-color: #17FBA2;
+  --cell-color: #ace170;
 }
 
 .cell:nth-child(4) {
-  --cell-color: #23F9B2;
+  --cell-color: #eefd63;
 }
 
 .cell:nth-child(5) {
-  --cell-color: #30F7C3;
+  --cell-color: #fffc9d;
 }
 
 .cell:nth-child(6) {
-  --cell-color: #3DF5D4;
+  --cell-color: #e5a5ff;
 }
 
 .cell:nth-child(7) {
-  --cell-color: #45F4DE;
+  --cell-color: #915efd;
 }
 
 .cell:nth-child(8) {
-  --cell-color: #53F1F0;
+  --cell-color: #7820a7;
 }
 
 .cell:nth-child(9) {
-  --cell-color: #60EFFF;
+  --cell-color: #fffdb5;
 }
 
 /*Animation*/
