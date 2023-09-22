@@ -226,7 +226,11 @@ p {
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background: rgba(9, 9, 12, 1);
+  background-image: linear-gradient(
+      to bottom right,
+      rgb(199, 255, 78),
+      rgb(180, 107, 252)
+    );
   border-bottom-left-radius: 200%;
   z-index: -1;
   -webkit-transition: -webkit-transform cubic-bezier(0.77, 0, 0.175, 1) 0.6s,
@@ -1111,6 +1115,16 @@ strong {
 }
 #carousel div.nextRightSecond img {
   width: 200px;
+}
+
+.fa-arrow-left:before {
+  content: "\f060";
+  display: none;
+}
+
+.fa-arrow-right:before {
+  content: "\f060";
+  display: none;
 }
 
 /* ---------------------------- BUTTONS PROJECTS ---------------------------- */
