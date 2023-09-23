@@ -1,12 +1,3 @@
-//PRELOADER PAGINA WEB
-window.onload = function() {
-  $('#onload').fadeOut();
-  $('body').removeClass('hidden');
-}
-
-
-
-
 //NAVBAR
 function moveToSelected(element) {
 
