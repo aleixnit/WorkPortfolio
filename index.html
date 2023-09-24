@@ -152,6 +152,7 @@
 
   <!-- ---------------------------- MAIN SECTION ----------------------------- -->
   <div class="section full-height over-hide">
+    <div style="position: absolute; bottom: 10%; left:50%;"><a href="#sobremi"><i class="fa-sharp fa-solid fa-chevron-down fa-beat fa-2x" style="color: #b4ff29;"></i></a></div>
     <!-- <img id="foto_personal" class="about_foto" src="./assets/cvfoto.jpg" alt="foto perfil" /> -->
 
     <div class="switch-wrap">
@@ -191,7 +192,14 @@
             </div>
           </button>
         </a>
+
+
+        <a href="./assets/cvaleix2023.pdf" target="_blank"><button id="descargarCV"><i class="fa-solid fa-download"></i>Descargar CV</button></a>
+
+       
+   
       </div>
+      
     </div>
 
     <div id="particles-js"></div>
@@ -204,7 +212,7 @@
 
   <!-- ------------------------------ ABOUT ME ------------------------------- -->
   <div class="sobremi_section">
-    <h2 style="color: white" class="hover-target hey-section tSobremi">
+    <h2 id="sobremi" style="color: white" class="hover-target hey-section tSobremi">
       😊SOBRE <span style="color: rgb(199, 255, 78)">MI</span>
     </h2>
     <div class="fototexto_about">
@@ -890,6 +898,27 @@
     Copyright © 2023 Aleix Aguilar with ❤️ - Todos los derechos reservados.
   </footer>
 
+
+ 
+<!-- ---------------------------- SCROLL SUAVE ----------------------------- -->
+<script>
+  $(document).ready(function () {
+      // Escuchar el clic en el enlace
+      $('a[href^="#"]').on('click', function (event) {
+          // Evitar el comportamiento predeterminado del enlace
+          event.preventDefault();
+  
+          // Obtener el destino del enlace (el ID al que se debe desplazar)
+          var target = $(this).attr('href');
+  
+          // Hacer un desplazamiento suave hasta el objetivo
+          $('html, body').animate({
+              scrollTop: $(target).offset().top
+          }, 1000); // El valor 1000 es la duración en milisegundos del desplazamiento (ajústalo según desees)
+      });
+  });
+  </script>
+  <!-- ------------------------------ TYPED.JS ------------------------------- -->
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
   <script>
     let typed = new Typed("#element", {
@@ -911,6 +940,8 @@
       // autoInsertCss: true,
     });
   </script>
+
+  <!-- -------------------- PRELOADER PAGINA WEB + JQUERY -------------------- -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script>
     //PRELOADER PAGINA WEB
@@ -924,13 +955,19 @@
     }
 
   </script>
+
+  <!-- ---------------------------- PARTICLES.JS ----------------------------- -->
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
+
+  <!-- ----------------------------- MENÚ NAVBAR ----------------------------- -->
   <!-- stats.js lib -->
   <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
 
   <!-- <script src="https://unpkg.com/nice-waves@latest"></script> -->
   <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+
+  <!-- ------------------------ SCROLL REVEAL SCRIPT ------------------------- -->
   <script>
     ScrollReveal().reveal(".hey-section", {
       interval: 16,
@@ -938,6 +975,8 @@
       delay: 100,
     });
   </script>
+
+  <!-- --------------------- LINKS A ARCHIVOS JAVASCRIPT --------------------- -->
   <script src="./index.js"></script>
   <script src="./gallery.js"></script>
   <script src="./translations.js"></script>
