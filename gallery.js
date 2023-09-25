@@ -8,29 +8,110 @@ var slide = document.querySelectorAll('.slider-single');
 var slideTotal = slide.length - 1;
 var slideCurrent = -1;
 
+function moveToSelected(element) {
+
+    if (element == "next") {
+      var selected = $(".selected").next();
+    } else if (element == "prev") {
+      var selected = $(".selected").prev();
+    } else {
+      var selected = element;
+    }
+  
+    var next = $(selected).next();
+    var prev = $(selected).prev();
+    var prevSecond = $(prev).prev();
+    var nextSecond = $(next).next();
+  
+    $(selected).removeClass().addClass("selected");
+  
+    $(prev).removeClass().addClass("prev");
+    $(next).removeClass().addClass("next");
+  
+    $(nextSecond).removeClass().addClass("nextRightSecond");
+    $(prevSecond).removeClass().addClass("prevLeftSecond");
+  
+    $(nextSecond).nextAll().removeClass().addClass('hideRight');
+    $(prevSecond).prevAll().removeClass().addClass('hideLeft');
+  
+  }
+  
+  // Eventos teclado
+  $(document).keydown(function(e) {
+      switch(e.which) {
+          case 37: // left
+          moveToSelected('prev');
+          break;
+  
+          case 39: // right
+          moveToSelected('next');
+          break;
+  
+          default: return;
+      }
+      e.preventDefault();
+  });
+  
+  $('#carousel div').click(function() {
+    moveToSelected($(this));
+  });
+  
+  $('#prev').click(function() {
+    moveToSelected('prev');
+  });
+  
+  $('#next').click(function() {
+    moveToSelected('next');
+  });
+
+  
+  /// PERMITIR EL ENLACE SOLO CUANDO ESTE SELECCIONADA:
+// Obtén todas las imágenes de la galería
+const galleryImages = document.querySelectorAll('.p_section #carousel img');
+
+// Agrega un evento de clic a cada imagen de la galería
+galleryImages.forEach(image => {
+  image.addEventListener('click', function() {
+    // Elimina la clase 'selected' de todas las imágenes
+    galleryImages.forEach(img => {
+      img.parentElement.classList.remove('selected');
+    });
+
+    // Agrega la clase 'selected' solo a la imagen clicada
+    this.parentElement.classList.add('selected');
+  });
+});
+
+// Obtén todos los enlaces de la galería
+const galleryLinks = document.querySelectorAll('.gallery-link');
+
+// Agrega un evento de clic condicional a los enlaces
+galleryLinks.forEach(link => {
+  link.addEventListener('click', function(event) {
+    // Verifica si la imagen está seleccionada
+    if (!this.parentElement.classList.contains('selected')) {
+      // Evita que el enlace se active si la imagen no está seleccionada
+      event.preventDefault();
+    }
+  });
+});
+
 function initBullets() {
     if (noBullets) {
         return;
     }
-
-    // Verifica si existe el contenedor antes de agregar las balas
-    const container = document.querySelector('.p_section #carousel');
-    if (!container) {
-        return;
-    }
-
     const bulletContainer = document.createElement('div');
-    bulletContainer.classList.add('bullet-container');
+    bulletContainer.classList.add('bullet-container')
     slide.forEach((elem, i) => {
         const bullet = document.createElement('div');
-        bullet.classList.add('bullet');
-        bullet.id = `bullet-index-${i}`;
+        bullet.classList.add('bullet')
+        bullet.id = `bullet-index-${i}`
         bullet.addEventListener('click', () => {
             goToIndexSlide(i);
-        });
+        })
         bulletContainer.appendChild(bullet);
         elem.classList.add('proactivede');
-    });
+    })
     container.appendChild(bulletContainer);
 }
 
@@ -38,31 +119,24 @@ function initArrows() {
     if (noArrows) {
         return;
     }
-
-    // Verifica si existe el contenedor antes de agregar las flechas
-    const container = document.querySelector('.p_section #carousel');
-    if (!container) {
-        return;
-    }
-
-    const leftArrow = document.createElement('a');
+    const leftArrow = document.createElement('a')
     const iLeft = document.createElement('i');
-    iLeft.classList.add('fa');
-    iLeft.classList.add('fa-arrow-left');
-    leftArrow.classList.add('slider-left');
-    leftArrow.appendChild(iLeft);
+    iLeft.classList.add('fa')
+    iLeft.classList.add('fa-arrow-left')
+    leftArrow.classList.add('slider-left')
+    leftArrow.appendChild(iLeft)
     leftArrow.addEventListener('click', () => {
         slideLeft();
-    });
-    const rightArrow = document.createElement('a');
+    })
+    const rightArrow = document.createElement('a')
     const iRight = document.createElement('i');
-    iRight.classList.add('fa');
-    iRight.classList.add('fa-arrow-right');
-    rightArrow.classList.add('slider-right');
-    rightArrow.appendChild(iRight);
+    iRight.classList.add('fa')
+    iRight.classList.add('fa-arrow-right')
+    rightArrow.classList.add('slider-right')
+    rightArrow.appendChild(iRight)
     rightArrow.addEventListener('click', () => {
         slideRight();
-    });
+    })
     container.appendChild(leftArrow);
     container.appendChild(rightArrow);
 }
@@ -238,35 +312,3 @@ function goToIndexSlide(index) {
 }
 
 slideInitial();
-
-
-/// PERMITIR EL ENLACE SOLO CUANDO ESTE SELECCIONADA:
-// Obtén todas las imágenes de la galería
-const galleryImages = document.querySelectorAll('.p_section #carousel img');
-
-// Agrega un evento de clic a cada imagen de la galería
-galleryImages.forEach(image => {
-  image.addEventListener('click', function() {
-    // Elimina la clase 'selected' de todas las imágenes
-    galleryImages.forEach(img => {
-      img.parentElement.classList.remove('selected');
-    });
-
-    // Agrega la clase 'selected' solo a la imagen clicada
-    this.parentElement.classList.add('selected');
-  });
-});
-
-// Obtén todos los enlaces de la galería
-const galleryLinks = document.querySelectorAll('.gallery-link');
-
-// Agrega un evento de clic condicional a los enlaces
-galleryLinks.forEach(link => {
-  link.addEventListener('click', function(event) {
-    // Verifica si la imagen está seleccionada
-    if (!this.parentElement.classList.contains('selected')) {
-      // Evita que el enlace se active si la imagen no está seleccionada
-      event.preventDefault();
-    }
-  });
-});

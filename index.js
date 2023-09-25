@@ -1,69 +1,11 @@
-//NAVBAR
-function moveToSelected(element) {
-
-  if (element == "next") {
-    var selected = $(".selected").next();
-  } else if (element == "prev") {
-    var selected = $(".selected").prev();
-  } else {
-    var selected = element;
-  }
-
-  var next = $(selected).next();
-  var prev = $(selected).prev();
-  var prevSecond = $(prev).prev();
-  var nextSecond = $(next).next();
-
-  $(selected).removeClass().addClass("selected");
-
-  $(prev).removeClass().addClass("prev");
-  $(next).removeClass().addClass("next");
-
-  $(nextSecond).removeClass().addClass("nextRightSecond");
-  $(prevSecond).removeClass().addClass("prevLeftSecond");
-
-  $(nextSecond).nextAll().removeClass().addClass('hideRight');
-  $(prevSecond).prevAll().removeClass().addClass('hideLeft');
-
-}
-
-// Eventos teclado
-$(document).keydown(function(e) {
-    switch(e.which) {
-        case 37: // left
-        moveToSelected('prev');
-        break;
-
-        case 39: // right
-        moveToSelected('next');
-        break;
-
-        default: return;
-    }
-    e.preventDefault();
-});
-
-$('#carousel div').click(function() {
-  moveToSelected($(this));
-});
-
-$('#prev').click(function() {
-  moveToSelected('prev');
-});
-
-$('#next').click(function() {
-  moveToSelected('next');
-});
-
-
-
-
+//NAVBAR------------------------------------------------------------------------------
+//NAVBAR------------------------------------------------------------------------------
+//NAVBAR------------------------------------------------------------------------------
+//NAVBAR------------------------------------------------------------------------------
 
 (function ($) {
   "use strict";
-
   //Page cursors
-
   document
     .getElementsByTagName("body")[0]
     .addEventListener("mousemove", function (n) {
@@ -96,7 +38,6 @@ $('#next').click(function() {
   }
 
   //Navigation
-
   var app = (function () {
     var body = undefined;
     var menu = undefined;
@@ -125,19 +66,14 @@ $('#next').click(function() {
     };
     init();
   })();
-
-  //Switch light/dark
-
-  $("#switch").on("click", function () {
-    if ($("body").hasClass("light")) {
-      $("body").removeClass("light");
-      $("#switch").removeClass("switched");
-    } else {
-      $("body").addClass("light");
-      $("#switch").addClass("switched");
-    }
-  });
 })(jQuery);
+
+/* ------------------------------ PARTICLES.JS ------------------------------ */
+/* ------------------------------ PARTICLES.JS ------------------------------ */
+/* ------------------------------ PARTICLES.JS ------------------------------ */
+/* ------------------------------ PARTICLES.JS ------------------------------ */
+/* ------------------------------ PARTICLES.JS ------------------------------ */
+
 
 particlesJS("particles-js", {
   particles: {
@@ -186,7 +122,7 @@ particlesJS("particles-js", {
     },
     modes: {
       grab: { distance: 400, line_linked: { opacity: 1 } },
-      bubble: { distance: 250, size: 0, duration: 2, opacity: 0, speed: 3 },
+      bubble: { distance: 250, size: 0, duration: 2, opacity: 0, speed: 4 },
       repulse: { distance: 400, duration: 0.4 },
       push: { particles_nb: 4 },
       remove: { particles_nb: 2 },
@@ -195,21 +131,7 @@ particlesJS("particles-js", {
   retina_detect: true,
 });
 
-var count_particles, stats, update;
-stats = new Stats();
-stats.setMode(0);
-stats.domElement.style.position = "absolute";
-stats.domElement.style.left = "0px";
-stats.domElement.style.top = "0px";
-document.body.appendChild(stats.domElement);
-count_particles = document.querySelector(".js-count-particles");
-update = function () {
-  stats.begin();
-  stats.end();
-  if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-    count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-  }
-  requestAnimationFrame(update);
-};
 requestAnimationFrame(update);
+
+
 
