@@ -1078,16 +1078,29 @@ body.nav-active .nav__list-item:nth-child(10) {
   opacity: 0;
 }
 
-
+/* ----------------------------- BOTON DESCARGAR ---------------------------- */
+#descargarCV {
+  padding: 1rem;
+  border-radius: 50px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  color: #70ff66;
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+}
 /* -------------------------- BOTÓN REDES SOCIALES -------------------------- */
 .social_buttons {
   display: flex;
   justify-content: start;
   align-items: center;
   gap: 20px;
+  cursor: pointer;
 }
 
 .btn {
+  cursor: pointer;
+
   margin-top: 20px;
   display: flex;
   justify-content: center;
