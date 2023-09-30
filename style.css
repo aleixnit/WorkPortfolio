@@ -8,6 +8,20 @@
   outline: none;
 }
 
+/* ------------------------- ANIMACION LOTTIE PLAYER ------------------------ */
+.lottiePlayer {
+  width: 400px;
+  height: 400px;
+}
+
+  /* ------------------------------ SCROLL BUTTON ----------------------------- */
+  .flecha-scroll {
+    position: absolute;
+     bottom: 10%;
+      left:50%;
+  }
+
+
 /* ---------------------------- PRELOADER PAGINA ---------------------------- */
 .hiddenloader {
   /* overflow: hidden; */
@@ -20,9 +34,6 @@
   background-color: rgb(0, 0, 0); /* Fondo semitransparente */
   z-index: 9999; /* Asegúrate de que el preloader esté en la parte superior */
 }
-
-/* ------------------------- LOADER VER MÁS BUTTONS ------------------------- */
-
 
 /* -------------------------- LOADER TIENDA CAMPAÑA ------------------------- */
 .master-container {
@@ -580,7 +591,7 @@
   }
 }
 
-/* ---------------------------- LOADER ASTRONAUTA --------------------------- */
+/* ---------------------------- LOADER--------------------------- */
 .centrado {
 height: 100vh;
 background-color: #000;
@@ -1942,6 +1953,17 @@ strong {
     margin-bottom: 0px;
     margin-top: 0;
     color: rgb(0, 0, 0);
+  }
+
+  /* ------------------------------ SCROLL BUTTON ----------------------------- */
+  .flecha-scroll {
+    position: absolute;
+     bottom: 10%;
+      left:48%;
+  }
+  /* ------------------------- ANIMACION LOTTIE PLAYER ------------------------ */
+  .lottiePlayer {
+    display: none;
   }
 
   /* --------------------------------- NAVBAR --------------------------------- */

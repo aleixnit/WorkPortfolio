@@ -155,54 +155,59 @@
 
   <!-- ---------------------------- MAIN SECTION ----------------------------- -->
   <div class="section full-height over-hide">
-    <div style="position: absolute; bottom: 10%; left:50%;"><a href="#" id="scrollButton"><i class="fa-sharp fa-solid fa-chevron-down fa-beat fa-2x" style="color: #b4ff29;"></i></a></div>
+    <div class="flecha-scroll"><a href="#" id="scrollButton"><i class="fa-sharp fa-solid fa-chevron-down fa-beat fa-2x" style="color: #b4ff29;"></i></a></div>
     <!-- <img id="foto_personal" class="about_foto" src="./assets/cvfoto.jpg" alt="foto perfil" /> -->
 
-    <div class="switch-wrap">
-      <h1 class="hey-section">
-        Hey!
-        <span id="element" class="titulo_typed_js"></span>
-      </h1>
+    <div class="switch-wrap" style="display: flex; justify-content: space-between; width: 80vw; align-items: center;">
 
-      <p class="hey-section engDescripcion">
-        Programador web junior <span id="texto-intro" style="font-weight: 600;">con gran pasión por la tecnología y el
-          diseño.</span>
-      </p>
-      <div class="social_buttons">
-        <a style="text-decoration: none;" href="https://www.linkedin.com/in/aleixnit/">
-          <button class="btn" type="button">
-            <strong><i style="color: rgb(255, 255, 255);" class="fab fa-linkedin"></i>
-              LINKEDIN</strong>
-            <div id="container-stars">
-              <div id="stars"></div>
-            </div>
-            <div id="glow">
-              <div class="circle"></div>
-              <div class="circle"></div>
-            </div>
-          </button>
-        </a>
-        <a style="text-decoration: none;" href="https://github.com/aleixnit">
-          <button class="btn" type="button">
-            <strong><i style="color: rgb(255, 255, 255);" class="fab fa-github"></i>
-              GITHUB</strong>
-            <div id="container-stars">
-              <div id="stars"></div>
-            </div>
-            <div id="glow">
-              <div class="circle"></div>
-              <div class="circle"></div>
-            </div>
-          </button>
-        </a>
-
-
-        <a href="./assets/cvaleix2023.pdf" target="_blank"><button id="descargarCV"><i class="fa-solid fa-download"></i>  Descargar CV</button></a>
-
-       
-   
+      <!-- ---------------------------- DIV IZQUIERDA ---------------------------- -->
+      <div>
+        <h1 class="hey-section">
+          Hey!
+          <span id="element" class="titulo_typed_js"></span>
+        </h1>
+        <p class="hey-section engDescripcion">
+          Programador web junior <span id="texto-intro" style="font-weight: 600;">con gran pasión por la tecnología y el
+            diseño.</span>
+        </p>
+        <div class="social_buttons">
+          <a style="text-decoration: none;" href="https://www.linkedin.com/in/aleixnit/">
+            <button class="btn" type="button">
+              <strong><i style="color: rgb(255, 255, 255);" class="fab fa-linkedin"></i>
+                LINKEDIN</strong>
+              <div id="container-stars">
+                <div id="stars"></div>
+              </div>
+              <div id="glow">
+                <div class="circle"></div>
+                <div class="circle"></div>
+              </div>
+            </button>
+          </a>
+          <a style="text-decoration: none;" href="https://github.com/aleixnit">
+            <button class="btn" type="button">
+              <strong><i style="color: rgb(255, 255, 255);" class="fab fa-github"></i>
+                GITHUB</strong>
+              <div id="container-stars">
+                <div id="stars"></div>
+              </div>
+              <div id="glow">
+                <div class="circle"></div>
+                <div class="circle"></div>
+              </div>
+            </button>
+          </a>
+          <a href="./assets/cvaleix2023.pdf" target="_blank"><button id="descargarCV"><i class="fa-solid fa-download"></i>  Descargar CV</button></a>
+        
+        </div>
       </div>
-      
+
+      <!-- ----------------------------- DIV DERECHA ----------------------------- -->
+      <div>
+        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> <dotlottie-player  class="lottiePlayer" src="https://lottie.host/234a7bc2-2535-44fe-a607-5275768ce9b9/2gr4mCeeZs.json" background="transparent" speed="1" loop autoplay></dotlottie-player>
+      </div>
+
+
     </div>
 
     <div id="particles-js"></div>
